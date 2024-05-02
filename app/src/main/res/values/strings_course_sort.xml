@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="course_sort_AZ">A-Z</string>
+    <string name="course_sort_ZA">Z-F</string>
+
+    <string name="course_type_all">All</string>
+    <string name="course_type_past">Past</string>
+    <string name="course_type_favorite">Favorite</string>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_item_AZ"
+        android:title="@string/course_sort_AZ"
+        app:fontFamily="@font/jost"/>
+    <item
+        android:id="@+id/action_item_ZA"
+        android:title="@string/course_sort_ZA"
+        app:itemTextAppearance="@style/DropMenuStyle"/>
+</menu>

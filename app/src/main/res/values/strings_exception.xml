@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="exception_empty">Fields cannot be empty</string>
+    <string name="exception_not_found">User with this login not found</string>
+    <string name="exception_wrong_password">Password is not correct</string>
+
+    <string name="exception_unknown_error">Unknown error, try again</string>
+
+</resources>

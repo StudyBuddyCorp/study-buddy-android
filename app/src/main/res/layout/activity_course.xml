@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseActivity"
+    android:background="@color/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listCourse"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#00FFFFFF"
+            android:scrollbars="none"/>
+
+        <LinearLayout
+            android:id="@+id/linearNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/background_navigation_blue"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imageNavigation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_arrow"
+                android:contentDescription="@string/course_image_navigation"/>
+
+            <LinearLayout
+                android:id="@+id/linearCourse"
+                tools:ignore="UseCompoundDrawables"
+                android:visibility="gone"
+                style="@style/NavigationLinear">
+
+                <ImageView
+                    android:id="@+id/imageCourse"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_course" />
+
+                <TextView
+                    android:id="@+id/textCourse"
+                    app:fontFamily="@font/jost"
+                    android:text="@string/navigation_course"
+                    style="@style/NavigationText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearBRS"
+                tools:ignore="UseCompoundDrawables"
+                android:visibility="gone"
+                style="@style/NavigationLinear">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_star" />
+
+                <TextView
+                    android:id="@+id/textBRS"
+                    app:fontFamily="@font/jost"
+                    android:text="@string/navigation_brs"
+                    style="@style/NavigationText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearProfile"
+                tools:ignore="UseCompoundDrawables"
+                android:visibility="gone"
+                style="@style/NavigationLinear">
+
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_profile" />
+
+                <TextView
+                    android:id="@+id/textProfile"
+                    app:fontFamily="@font/jost"
+                    android:text="@string/navigation_profile"
+                    style="@style/NavigationText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearTime"
+                tools:ignore="UseCompoundDrawables"
+                android:visibility="gone"
+                style="@style/NavigationLinear">
+
+                <ImageView
+                    android:id="@+id/imageTime"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_time" />
+
+                <TextView
+                    android:id="@+id/textTime"
+                    app:fontFamily="@font/jost"
+                    android:text="@string/navigation_course"
+                    style="@style/NavigationText"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearSortMenu"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:layout_marginEnd="10dp"
+                android:onClick="toggleMenu"
+                android:background="@drawable/background_white">
+
+                <TextView
+                    android:id="@+id/selected_item_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/jost"
+                    android:layout_weight="1"
+                    android:onClick="toggleMenu"/>
+
+
+                <ImageView
+                    android:id="@+id/imageSortMenu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_chevron_down"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearTypeMenu"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:onClick="toggleMenu"
+                android:background="@drawable/background_white">
+
+                <TextView
+                    android:id="@+id/selected_type_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/jost"
+                    android:layout_weight="1"
+                    android:onClick="toggleMenu"/>
+
+
+                <ImageView
+                    android:id="@+id/imageTypeMenu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_chevron_down"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

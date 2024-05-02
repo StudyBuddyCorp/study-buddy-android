@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@drawable/background_navigation_blue"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageNavigation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_arrow"
+            android:layout_gravity="center"
+            android:contentDescription="@string/course_image_navigation"/>
+
+        <LinearLayout
+            android:id="@+id/linearCourse"
+            tools:ignore="UseCompoundDrawables"
+            style="@style/NavigationLinear">
+
+            <ImageView
+                android:id="@+id/imageCourse"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icon_course" />
+
+            <TextView
+                android:id="@+id/textCourse"
+                app:fontFamily="@font/jost"
+                android:text="@string/navigation_course"
+                style="@style/NavigationText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBRS"
+            tools:ignore="UseCompoundDrawables"
+            style="@style/NavigationLinear">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icon_star" />
+
+            <TextView
+                android:id="@+id/textBRS"
+                app:fontFamily="@font/jost"
+                android:text="@string/navigation_brs"
+                style="@style/NavigationText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearProfile"
+            tools:ignore="UseCompoundDrawables"
+            style="@style/NavigationLinear">
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icon_profile" />
+
+            <TextView
+                android:id="@+id/textProfile"
+                app:fontFamily="@font/jost"
+                android:text="@string/navigation_profile"
+                style="@style/NavigationText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearTime"
+            tools:ignore="UseCompoundDrawables"
+            style="@style/NavigationLinear">
+
+            <ImageView
+                android:id="@+id/imageTime"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icon_time" />
+
+            <TextView
+                android:id="@+id/textTime"
+                app:fontFamily="@font/jost"
+                android:text="@string/navigation_course"
+                style="@style/NavigationText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

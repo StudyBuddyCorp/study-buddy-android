@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">StudyBuddy</string>
+
+    <!-- Диалог загрузки -->
+    <string name="loading_text">Please, wait…</string>
+
+    <!-- Активити Входа -->
+    <string name="entrance_name">Entrance</string>
+    <string name="entrance_login">Login</string>
+    <string name="entrance_password">Password</string>
+    <string name="entrance_come_in">Log in</string>
+    <string name="entrance_forgot_password">Forgot your password ?</string>
+    <string name="entrance_create_account">Create an account</string>
+    <string name="entrance_lang_ru">RU</string>
+    <string name="entrance_lang_en">EN</string>
+    <string name="entrance_lang_zh">ZH</string>
+
+    <!-- Активити Курсы -->
+    <string name="course_image_navigation">/\</string>
+
+    <string name="hi">Hi, </string>
+
+
+    <!-- Диалог Навигации -->
+    <string name="navigation_course">Course</string>
+    <string name="navigation_brs">БРС</string>
+    <string name="navigation_profile">Profile</string>
+    <string name="navigation_timer">Timer</string>
+
+</resources>

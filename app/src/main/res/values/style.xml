@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Анимации -->
+    <style name="DialogLoadingAnim">
+        <item name="android:windowEnterAnimation">@anim/loading_animation_create</item>
+        <item name="android:windowExitAnimation">@anim/loading_animation_exit</item>
+    </style>
+
+    <!-- Экран Входа -->
+    <style name="EntranceEditeTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:background">@drawable/corner_blue_2dp_20dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:fontFamily">@font/jost</item>
+        <item name="android:maxLength">24</item>
+    </style>
+
+    <style name="EntranceTextHelp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="EntranceLangText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- Диалог навигации -->
+    <style name="NavigationText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="NavigationLinear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="DropMenuStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:fontFamily">@font/jost</item>
+    </style>
+
+</resources>
