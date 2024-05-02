@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_vertical"
+        android:background="@drawable/background_white"
+        android:descendantFocusability="blocksDescendants">
+
+
+        <ImageView
+            android:id="@+id/imageCourse"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_chevron_down"/>
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jost"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="4dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:fontFamily="@font/jost"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="26sp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
